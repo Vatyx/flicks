@@ -43,7 +43,7 @@ class MoviesViewController: UIViewController, UICollectionViewDataSource, UIColl
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         if let movies = movies {
             print(movies.count)
-            return Int(ceilf(Float(movies.count)/2.0))
+            return movies.count
         } else {
             return 0
         }
