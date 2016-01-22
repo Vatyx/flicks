@@ -12,8 +12,20 @@
 		24E657EC1C505EE1001848DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24E657EB1C505EE1001848DB /* Assets.xcassets */; };
 		24E657EF1C505EE1001848DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24E657ED1C505EE1001848DB /* LaunchScreen.storyboard */; };
 		24E657F91C505FBB001848DB /* MoviesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E657F81C505FBB001848DB /* MoviesViewController.swift */; };
-		24E657FC1C506D78001848DB /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E657FB1C506D78001848DB /* MovieCell.swift */; };
 		24E657FF1C508226001848DB /* concrete_seamless.png in Resources */ = {isa = PBXBuildFile; fileRef = 24E657FE1C508226001848DB /* concrete_seamless.png */; };
+		24E658021C50ACD0001848DB /* MovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E658011C50ACD0001848DB /* MovieViewController.swift */; };
+		24E658061C50B41A001848DB /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E658051C50B41A001848DB /* MovieCell.swift */; };
+		24E6580C1C51D66D001848DB /* Raleway-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 24E658071C51D66D001848DB /* Raleway-Light.ttf */; };
+		24E6580D1C51D66D001848DB /* Raleway-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 24E658081C51D66D001848DB /* Raleway-Medium.ttf */; };
+		24E6580E1C51D66D001848DB /* Raleway-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 24E658091C51D66D001848DB /* Raleway-Regular.ttf */; };
+		24E6580F1C51D66D001848DB /* Raleway-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 24E6580A1C51D66D001848DB /* Raleway-SemiBold.ttf */; };
+		24E658101C51D66D001848DB /* Raleway-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 24E6580B1C51D66D001848DB /* Raleway-Thin.ttf */; };
+		24E658141C51DF48001848DB /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 24E658131C51DF48001848DB /* Roboto-Thin.ttf */; };
+		24E6581A1C51ED5F001848DB /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 24E658151C51ED5F001848DB /* Roboto-Light.ttf */; };
+		24E6581B1C51ED5F001848DB /* Roboto-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 24E658161C51ED5F001848DB /* Roboto-LightItalic.ttf */; };
+		24E6581C1C51ED5F001848DB /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 24E658171C51ED5F001848DB /* Roboto-Medium.ttf */; };
+		24E6581D1C51ED5F001848DB /* Roboto-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 24E658181C51ED5F001848DB /* Roboto-MediumItalic.ttf */; };
+		24E6581E1C51ED5F001848DB /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 24E658191C51ED5F001848DB /* Roboto-Regular.ttf */; };
 		449E579A8AA549ED06CB7AC1 /* Pods_Flicks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69DED673ABA6891A5A4B786E /* Pods_Flicks.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,8 +37,20 @@
 		24E657EE1C505EE1001848DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		24E657F01C505EE1001848DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		24E657F81C505FBB001848DB /* MoviesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoviesViewController.swift; sourceTree = "<group>"; };
-		24E657FB1C506D78001848DB /* MovieCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
 		24E657FE1C508226001848DB /* concrete_seamless.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = concrete_seamless.png; sourceTree = "<group>"; };
+		24E658011C50ACD0001848DB /* MovieViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieViewController.swift; sourceTree = "<group>"; };
+		24E658051C50B41A001848DB /* MovieCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
+		24E658071C51D66D001848DB /* Raleway-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Raleway-Light.ttf"; path = "../../../Downloads/Raleway/Raleway-Light.ttf"; sourceTree = "<group>"; };
+		24E658081C51D66D001848DB /* Raleway-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Raleway-Medium.ttf"; path = "../../../Downloads/Raleway/Raleway-Medium.ttf"; sourceTree = "<group>"; };
+		24E658091C51D66D001848DB /* Raleway-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Raleway-Regular.ttf"; path = "../../../Downloads/Raleway/Raleway-Regular.ttf"; sourceTree = "<group>"; };
+		24E6580A1C51D66D001848DB /* Raleway-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Raleway-SemiBold.ttf"; path = "../../../Downloads/Raleway/Raleway-SemiBold.ttf"; sourceTree = "<group>"; };
+		24E6580B1C51D66D001848DB /* Raleway-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Raleway-Thin.ttf"; path = "../../../Downloads/Raleway/Raleway-Thin.ttf"; sourceTree = "<group>"; };
+		24E658131C51DF48001848DB /* Roboto-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-Thin.ttf"; path = "../../../Downloads/Roboto/Roboto-Thin.ttf"; sourceTree = "<group>"; };
+		24E658151C51ED5F001848DB /* Roboto-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-Light.ttf"; path = "../../../Downloads/Roboto/Roboto-Light.ttf"; sourceTree = "<group>"; };
+		24E658161C51ED5F001848DB /* Roboto-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-LightItalic.ttf"; path = "../../../Downloads/Roboto/Roboto-LightItalic.ttf"; sourceTree = "<group>"; };
+		24E658171C51ED5F001848DB /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-Medium.ttf"; path = "../../../Downloads/Roboto/Roboto-Medium.ttf"; sourceTree = "<group>"; };
+		24E658181C51ED5F001848DB /* Roboto-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-MediumItalic.ttf"; path = "../../../Downloads/Roboto/Roboto-MediumItalic.ttf"; sourceTree = "<group>"; };
+		24E658191C51ED5F001848DB /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-Regular.ttf"; path = "../../../Downloads/Roboto/Roboto-Regular.ttf"; sourceTree = "<group>"; };
 		611FEAD0B85DA2332F6DF9B2 /* Pods-Flicks.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flicks.release.xcconfig"; path = "Pods/Target Support Files/Pods-Flicks/Pods-Flicks.release.xcconfig"; sourceTree = "<group>"; };
 		69DED673ABA6891A5A4B786E /* Pods_Flicks.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Flicks.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		88924F4FE0D3577B3C2D9BE7 /* Pods-Flicks.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flicks.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Flicks/Pods-Flicks.debug.xcconfig"; sourceTree = "<group>"; };
@@ -88,7 +112,7 @@
 		24E657FA1C506D4B001848DB /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				24E657FB1C506D78001848DB /* MovieCell.swift */,
+				24E658051C50B41A001848DB /* MovieCell.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -96,6 +120,7 @@
 		24E657FD1C506D84001848DB /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				24E658011C50ACD0001848DB /* MovieViewController.swift */,
 				24E657F81C505FBB001848DB /* MoviesViewController.swift */,
 			);
 			name = "View Controllers";
@@ -104,6 +129,17 @@
 		24E658001C50822C001848DB /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				24E658151C51ED5F001848DB /* Roboto-Light.ttf */,
+				24E658161C51ED5F001848DB /* Roboto-LightItalic.ttf */,
+				24E658171C51ED5F001848DB /* Roboto-Medium.ttf */,
+				24E658181C51ED5F001848DB /* Roboto-MediumItalic.ttf */,
+				24E658191C51ED5F001848DB /* Roboto-Regular.ttf */,
+				24E658131C51DF48001848DB /* Roboto-Thin.ttf */,
+				24E658071C51D66D001848DB /* Raleway-Light.ttf */,
+				24E658081C51D66D001848DB /* Raleway-Medium.ttf */,
+				24E658091C51D66D001848DB /* Raleway-Regular.ttf */,
+				24E6580A1C51D66D001848DB /* Raleway-SemiBold.ttf */,
+				24E6580B1C51D66D001848DB /* Raleway-Thin.ttf */,
 				24E657FE1C508226001848DB /* concrete_seamless.png */,
 			);
 			name = Resources;
@@ -179,8 +215,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24E6581C1C51ED5F001848DB /* Roboto-Medium.ttf in Resources */,
 				24E657EF1C505EE1001848DB /* LaunchScreen.storyboard in Resources */,
+				24E6580F1C51D66D001848DB /* Raleway-SemiBold.ttf in Resources */,
+				24E6581B1C51ED5F001848DB /* Roboto-LightItalic.ttf in Resources */,
+				24E6581D1C51ED5F001848DB /* Roboto-MediumItalic.ttf in Resources */,
+				24E6580D1C51D66D001848DB /* Raleway-Medium.ttf in Resources */,
+				24E6581A1C51ED5F001848DB /* Roboto-Light.ttf in Resources */,
+				24E658101C51D66D001848DB /* Raleway-Thin.ttf in Resources */,
+				24E658141C51DF48001848DB /* Roboto-Thin.ttf in Resources */,
+				24E6580C1C51D66D001848DB /* Raleway-Light.ttf in Resources */,
+				24E6580E1C51D66D001848DB /* Raleway-Regular.ttf in Resources */,
 				24E657EC1C505EE1001848DB /* Assets.xcassets in Resources */,
+				24E6581E1C51ED5F001848DB /* Roboto-Regular.ttf in Resources */,
 				24E657EA1C505EE1001848DB /* Main.storyboard in Resources */,
 				24E657FF1C508226001848DB /* concrete_seamless.png in Resources */,
 			);
@@ -243,7 +290,8 @@
 			files = (
 				24E657E51C505EE1001848DB /* AppDelegate.swift in Sources */,
 				24E657F91C505FBB001848DB /* MoviesViewController.swift in Sources */,
-				24E657FC1C506D78001848DB /* MovieCell.swift in Sources */,
+				24E658061C50B41A001848DB /* MovieCell.swift in Sources */,
+				24E658021C50ACD0001848DB /* MovieViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
