@@ -26,6 +26,9 @@
 		24E6581C1C51ED5F001848DB /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 24E658171C51ED5F001848DB /* Roboto-Medium.ttf */; };
 		24E6581D1C51ED5F001848DB /* Roboto-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 24E658181C51ED5F001848DB /* Roboto-MediumItalic.ttf */; };
 		24E6581E1C51ED5F001848DB /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 24E658191C51ED5F001848DB /* Roboto-Regular.ttf */; };
+		24E658201C52000E001848DB /* noun_156706_cc.png in Resources */ = {isa = PBXBuildFile; fileRef = 24E6581F1C52000E001848DB /* noun_156706_cc.png */; };
+		24E658221C52008A001848DB /* zluev.png in Resources */ = {isa = PBXBuildFile; fileRef = 24E658211C52008A001848DB /* zluev.png */; };
+		24E658281C52039E001848DB /* iconmonstr-time-1-32.png in Resources */ = {isa = PBXBuildFile; fileRef = 24E658271C52039E001848DB /* iconmonstr-time-1-32.png */; };
 		449E579A8AA549ED06CB7AC1 /* Pods_Flicks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69DED673ABA6891A5A4B786E /* Pods_Flicks.framework */; };
 /* End PBXBuildFile section */
 
@@ -51,6 +54,9 @@
 		24E658171C51ED5F001848DB /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-Medium.ttf"; path = "../../../Downloads/Roboto/Roboto-Medium.ttf"; sourceTree = "<group>"; };
 		24E658181C51ED5F001848DB /* Roboto-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-MediumItalic.ttf"; path = "../../../Downloads/Roboto/Roboto-MediumItalic.ttf"; sourceTree = "<group>"; };
 		24E658191C51ED5F001848DB /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-Regular.ttf"; path = "../../../Downloads/Roboto/Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		24E6581F1C52000E001848DB /* noun_156706_cc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = noun_156706_cc.png; path = ../../../Downloads/noun_156706_cc.png; sourceTree = "<group>"; };
+		24E658211C52008A001848DB /* zluev.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = zluev.png; path = ../../../Downloads/zluev.png; sourceTree = "<group>"; };
+		24E658271C52039E001848DB /* iconmonstr-time-1-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "iconmonstr-time-1-32.png"; path = "../../../Downloads/iconmonstr-time-1-32.png"; sourceTree = "<group>"; };
 		611FEAD0B85DA2332F6DF9B2 /* Pods-Flicks.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flicks.release.xcconfig"; path = "Pods/Target Support Files/Pods-Flicks/Pods-Flicks.release.xcconfig"; sourceTree = "<group>"; };
 		69DED673ABA6891A5A4B786E /* Pods_Flicks.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Flicks.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		88924F4FE0D3577B3C2D9BE7 /* Pods-Flicks.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flicks.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Flicks/Pods-Flicks.debug.xcconfig"; sourceTree = "<group>"; };
@@ -129,6 +135,9 @@
 		24E658001C50822C001848DB /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				24E658271C52039E001848DB /* iconmonstr-time-1-32.png */,
+				24E658211C52008A001848DB /* zluev.png */,
+				24E6581F1C52000E001848DB /* noun_156706_cc.png */,
 				24E658151C51ED5F001848DB /* Roboto-Light.ttf */,
 				24E658161C51ED5F001848DB /* Roboto-LightItalic.ttf */,
 				24E658171C51ED5F001848DB /* Roboto-Medium.ttf */,
@@ -216,10 +225,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				24E6581C1C51ED5F001848DB /* Roboto-Medium.ttf in Resources */,
+				24E658281C52039E001848DB /* iconmonstr-time-1-32.png in Resources */,
 				24E657EF1C505EE1001848DB /* LaunchScreen.storyboard in Resources */,
+				24E658201C52000E001848DB /* noun_156706_cc.png in Resources */,
 				24E6580F1C51D66D001848DB /* Raleway-SemiBold.ttf in Resources */,
 				24E6581B1C51ED5F001848DB /* Roboto-LightItalic.ttf in Resources */,
 				24E6581D1C51ED5F001848DB /* Roboto-MediumItalic.ttf in Resources */,
+				24E658221C52008A001848DB /* zluev.png in Resources */,
 				24E6580D1C51D66D001848DB /* Raleway-Medium.ttf in Resources */,
 				24E6581A1C51ED5F001848DB /* Roboto-Light.ttf in Resources */,
 				24E658101C51D66D001848DB /* Raleway-Thin.ttf in Resources */,

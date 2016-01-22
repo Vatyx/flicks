@@ -46,7 +46,8 @@
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
-                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
                                         <connections>
                                             <outlet property="posterImage" destination="hST-M8-53o" id="UTh-WF-muu"/>
@@ -62,11 +63,12 @@
                     <connections>
                         <outlet property="collectionView" destination="cjJ-SV-SZq" id="QGo-Zg-IfL"/>
                         <outlet property="flowLayout" destination="rRL-Or-Bh9" id="R9X-pV-y3h"/>
+                        <outlet property="upcomingTabBarItem" destination="gnd-b5-OUf" id="wHg-J4-2JH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="598" y="364"/>
+            <point key="canvasLocation" x="570" y="348"/>
         </scene>
         <!--Movie View Controller-->
         <scene sceneID="bjU-2g-p7j">
@@ -221,6 +223,40 @@
             </objects>
             <point key="canvasLocation" x="1026" y="364"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="0iJ-Dg-Vx3">
+            <objects>
+                <viewController id="bAs-nw-1Bz" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WxL-eG-BOS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tabBar contentMode="scaleToFill" barStyle="black" id="E7R-dn-tiP">
+                                <rect key="frame" x="0.0" y="448" width="320" height="49"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <items>
+                                    <tabBarItem title="Now Playing" image="zluev.png" selectedImage="zluev.png" id="KpE-j6-hc8"/>
+                                    <tabBarItem systemItem="topRated" id="keM-j8-uGZ"/>
+                                    <tabBarItem systemItem="contacts" id="gnd-b5-OUf"/>
+                                </items>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="barTintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="selectedImageTintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                        <color key="value" red="0.96078431372549022" green="0.67843137254901964" blue="0.15686274509803921" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </tabBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PuW-o1-cqe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1526" y="364"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="MFl-Ia-hXa">
             <objects>
@@ -252,5 +288,21 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h0v-JX-tds" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="Wa5-1h-qDt">
+            <objects>
+                <viewController id="A01-Js-eNb" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qeC-RK-0z6">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pTk-K2-Xlj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
     </scenes>
+    <resources>
+        <image name="zluev.png" width="24" height="26"/>
+    </resources>
 </document>

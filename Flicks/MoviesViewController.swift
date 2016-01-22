@@ -15,12 +15,16 @@ class MoviesViewController: UIViewController, UICollectionViewDataSource, UIColl
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var flowLayout: UICollectionViewFlowLayout!
     
+    @IBOutlet weak var upcomingTabBarItem: UITabBarItem!
     var movies: [NSDictionary]?
     
     let defaults = NSUserDefaults.standardUserDefaults()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let refreshControler = UIRefreshControl()
+        refreshControler.addTarget(self, action: "handleRefresh:", forControlEvents: UIControlEvents.ValueChanged)
+        collectionView.insertSubview(refreshControler, atIndex: 0)
 
         collectionView.dataSource = self
         collectionView.delegate = self
@@ -52,8 +56,28 @@ class MoviesViewController: UIViewController, UICollectionViewDataSource, UIColl
         
         let posterPath = movie["poster_path"] as! String
         let imageUrl = NSURL(string: baseUrl + posterPath)
-        cell.posterImage.setImageWithURL(imageUrl!)
-        
+        let imageRequest = NSURLRequest(URL: NSURL(string: baseUrl + posterPath)!)
+        cell.posterImage.setImageWithURLRequest(
+            imageRequest,
+            placeholderImage: nil,
+            success: { (imageRequest, imageResponse, image) -> Void in
+                
+                // imageResponse will be nil if the image is cached
+                if imageResponse != nil {
+                    print("Image was NOT cached, fade in image")
+                    cell.posterImage.alpha = 0.0
+                    cell.posterImage.image = image
+                    UIView.animateWithDuration(0.3, animations: { () -> Void in
+                        cell.posterImage.alpha = 1.0
+                    })
+                } else {
+                    print("Image was cached so just update the image")
+                    cell.posterImage.image = image
+                }
+            },
+            failure: { (imageRequest, imageResponse, error) -> Void in
+                // do something for the failure condition
+        })
         print("row \(indexPath.row)")
         
         return cell
@@ -96,6 +120,36 @@ class MoviesViewController: UIViewController, UICollectionViewDataSource, UIColl
         })
 
         task.resume()
+    }
+    
+    func handleRefresh(refreshControl: UIRefreshControl)
+    {
+        print("Im not in here")
+        let apiKey = "a07e22bc18f5cb106bfe4cc1f83ad8ed"
+        let url = NSURL(string: "https://api.themoviedb.org/3/movie/now_playing?api_key=\(apiKey)")
+        let request = NSURLRequest(URL: url!)
+        let session = NSURLSession(
+            configuration: NSURLSessionConfiguration.defaultSessionConfiguration(),
+            delegate: nil,
+            delegateQueue: NSOperationQueue.mainQueue()
+        )
+        
+        let task: NSURLSessionDataTask = session.dataTaskWithRequest(request,
+            completionHandler: { (dataOrNil, response, error) in
+                if let data = dataOrNil {
+                    if let responseDictionary = try! NSJSONSerialization.JSONObjectWithData(
+                        data, options:[]) as? NSDictionary {
+                            NSLog("response: \(responseDictionary)")
+                            
+                            self.movies = responseDictionary["results"] as! [NSDictionary]
+                            self.collectionView.reloadData()
+                            refreshControl.endRefreshing()
+                    }
+                }
+        })
+        
+        task.resume()
+
     }
     
     override func viewWillAppear(animated: Bool) {
