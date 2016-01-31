@@ -4,7 +4,7 @@
 
 **Flicks** is a movies app using the [The Movie Database API](http://docs.themoviedb.apiary.io/#).
 
-Time spent: **8** hours spent in total
+Time spent: **9.5** hours spent in total (**8** for Part 1, **1.5** for Part 2)
 
 ## User Stories
 
@@ -52,7 +52,7 @@ The screen tearing is due to running OSX on a virtual machine. Although the virt
 
 Implementing a scrolling view for the detailed movie view was quite tough to get it the way I wanted it to be.
 
-Adding a Tab Bar in the way I wanted it to be. I decided against doing the full Tab Bar and would add it at a later point.
+I wasn't able to change the selection style of my cells due to using CollectionView
 
 ## License
 
