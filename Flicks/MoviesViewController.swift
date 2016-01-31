@@ -17,6 +17,7 @@ class MoviesViewController: UIViewController, UICollectionViewDataSource, UIColl
     
     @IBOutlet weak var upcomingTabBarItem: UITabBarItem!
     var movies: [NSDictionary]?
+    var endpoint: String!
     
     let defaults = NSUserDefaults.standardUserDefaults()
     
@@ -54,30 +55,31 @@ class MoviesViewController: UIViewController, UICollectionViewDataSource, UIColl
         let movie = movies![indexPath.row]
         let baseUrl = "http://image.tmdb.org/t/p/w500"
         
-        let posterPath = movie["poster_path"] as! String
-        let imageUrl = NSURL(string: baseUrl + posterPath)
-        let imageRequest = NSURLRequest(URL: NSURL(string: baseUrl + posterPath)!)
-        cell.posterImage.setImageWithURLRequest(
-            imageRequest,
-            placeholderImage: nil,
-            success: { (imageRequest, imageResponse, image) -> Void in
-                
-                // imageResponse will be nil if the image is cached
-                if imageResponse != nil {
-                    print("Image was NOT cached, fade in image")
-                    cell.posterImage.alpha = 0.0
-                    cell.posterImage.image = image
-                    UIView.animateWithDuration(0.3, animations: { () -> Void in
-                        cell.posterImage.alpha = 1.0
-                    })
-                } else {
-                    print("Image was cached so just update the image")
-                    cell.posterImage.image = image
-                }
-            },
-            failure: { (imageRequest, imageResponse, error) -> Void in
-                // do something for the failure condition
-        })
+        if let posterPath = movie["poster_path"] as? String {
+            let imageUrl = NSURL(string: baseUrl + posterPath)
+            let imageRequest = NSURLRequest(URL: NSURL(string: baseUrl + posterPath)!)
+            cell.posterImage.setImageWithURLRequest(
+                imageRequest,
+                placeholderImage: nil,
+                success: { (imageRequest, imageResponse, image) -> Void in
+                    
+                    // imageResponse will be nil if the image is cached
+                    if imageResponse != nil {
+                        print("Image was NOT cached, fade in image")
+                        cell.posterImage.alpha = 0.0
+                        cell.posterImage.image = image
+                        UIView.animateWithDuration(0.3, animations: { () -> Void in
+                            cell.posterImage.alpha = 1.0
+                        })
+                    } else {
+                        print("Image was cached so just update the image")
+                        cell.posterImage.image = image
+                    }
+                },
+                failure: { (imageRequest, imageResponse, error) -> Void in
+                    // do something for the failure condition
+            })
+        }
         print("row \(indexPath.row)")
         
         return cell
@@ -97,7 +99,7 @@ class MoviesViewController: UIViewController, UICollectionViewDataSource, UIColl
         // ...
         
         let apiKey = "a07e22bc18f5cb106bfe4cc1f83ad8ed"
-        let url = NSURL(string: "https://api.themoviedb.org/3/movie/now_playing?api_key=\(apiKey)")
+        let url = NSURL(string: "https://api.themoviedb.org/3/movie/\(endpoint)?api_key=\(apiKey)")
         let request = NSURLRequest(URL: url!)
         let session = NSURLSession(
             configuration: NSURLSessionConfiguration.defaultSessionConfiguration(),
@@ -126,7 +128,7 @@ class MoviesViewController: UIViewController, UICollectionViewDataSource, UIColl
     {
         print("Im not in here")
         let apiKey = "a07e22bc18f5cb106bfe4cc1f83ad8ed"
-        let url = NSURL(string: "https://api.themoviedb.org/3/movie/now_playing?api_key=\(apiKey)")
+        let url = NSURL(string: "https://api.themoviedb.org/3/movie/\(endpoint)?api_key=\(apiKey)")
         let request = NSURLRequest(URL: url!)
         let session = NSURLSession(
             configuration: NSURLSessionConfiguration.defaultSessionConfiguration(),
