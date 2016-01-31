@@ -44,6 +44,8 @@ Unfortunately imgur made my gif into a gifv which can't be seen in page on Githu
 
 View the walkthrough [here](http://i.imgur.com/JSjFq1O.gifv)
 
+[Part 2](http://i.imgur.com/1Ij5Tup.gifv)
+
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Notes
