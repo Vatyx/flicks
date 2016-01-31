@@ -14,6 +14,8 @@ The following **required** functionality is complete:
 - [x] Poster images are loaded using the UIImageView category in the AFNetworking library.
 - [x] User sees a loading state while waiting for the movies API.
 - [x] User can pull to refresh the movie list.
+- [x] User can select from a tab bar for either Now Playing or Top Rated movies.
+- [x] User can view movie details by tapping on a cell.
 
 The following **optional** features are implemented:
 
@@ -25,7 +27,7 @@ The following **optional** features are implemented:
 
 The following **additional** features are implemented:
 
-- [x] The backdrop image, release date, rating and overview of the movie are displayed when the movie poster is clicked.
+- [x] User can also select from a tab bar for Popular and Upcoming as well.
 - [x] Similar movies to the movie clicked are displayed as well
 - [x] If a similar movie is tapped, another view will open with the information of that movie being displayed. The user can click on as many similar movies as they want.
 
